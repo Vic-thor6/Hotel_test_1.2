@@ -1,0 +1,83 @@
+{% extends "ventas1/base_nav.html" %}
+
+{% block content %}
+{% load static %}
+        <script src="{% static 'ventas1/js/catalogo_ventasaccesorios.js' %}"></script>
+
+            <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 20px 0;
+        }
+        nav {
+            background-color: #555;
+            padding: 10px 0;
+        }
+        nav ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+        }
+        nav ul li {
+            display: inline;
+            margin-right: 20px;
+        }
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        section {
+            padding: 20px;
+        }
+        footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 10px 0;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+        }
+    </style>
+<body>
+    <header>
+        <h1>Acerca de nosotros - Hotel Bella Vista</h1>
+    </header>
+     <section>
+        <h2>Descubre el Hotel Bella Vista</h2>
+        <p>El Hotel Bella Vista es el lugar perfecto para tus vacaciones. Ubicado en una pintoresca ciudad costera, nuestro hotel ofrece una experiencia inolvidable para todos nuestros huéspedes.</p>
+        <p>Con una ubicación privilegiada frente al mar y a solo unos minutos del centro de la ciudad, el Hotel Bella Vista es el destino ideal para relajarse y disfrutar de unas vacaciones increíbles.</p>
+    </section>
+    <section>
+        <h2>Nuestras instalaciones</h2>
+        <p>El Hotel Bella Vista ofrece una amplia gama de instalaciones y servicios para garantizar una estancia cómoda y agradable:</p>
+        <ul>
+            <li>Piscina al aire libre con vista al mar</li>
+            <li>Restaurante con cocina local e internacional</li>
+            <li>Gimnasio completamente equipado</li>
+            <li>Salón de eventos y conferencias</li>
+            <li>Conexión Wi-Fi gratuita en todo el hotel</li>
+            <li>Servicio de lavandería</li>
+            <li>Estacionamiento gratuito</li>
+        </ul>
+    </section>
+    <section>
+        <h2>Nuestro compromiso</h2>
+        <p>En el Hotel Bella Vista, nuestro compromiso es brindar a nuestros huéspedes una experiencia excepcional. Nos esforzamos por ofrecer un servicio de alta calidad y asegurarnos de que cada huésped se sienta como en casa.</p>
+        <p>Ya sea que estés aquí por negocios o por placer, nuestro amable y atento personal está siempre disponible para ayudarte con todo lo que necesites durante tu estancia.</p>
+    </section>
+    <footer>
+        <p>&copy; 2024 Hotel Bella Vista - Todos los derechos reservados</p>
+    </footer>
+</body>
+
+{% endblock content %}

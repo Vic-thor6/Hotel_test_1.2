@@ -1,0 +1,110 @@
+{% extends "ventas1/base_nav.html" %}
+
+
+
+
+{% block content %}
+<title>HOME</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 20px 0;
+        }
+        nav {
+            background-color: #555;
+            padding: 10px 0;
+        }
+        nav ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+        }
+        nav ul li {
+            display: inline;
+            margin-right: 20px;
+        }
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        section {
+            padding: 20px;
+        }
+        footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 10px 0;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+        }
+        .hero-image {
+            background-image: url('hotel.jpg');
+            height: 500px;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            position: relative;
+        }
+        .hero-text {
+            text-align: center;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            color: white;
+        }
+        .hero-text h1 {
+            font-size: 50px;
+        }
+        .hero-text p {
+            font-size: 20px;
+            margin-top: 20px;
+        }
+        .cta-button {
+            background-color: #555;
+            color: white;
+            padding: 10px 20px;
+            text-align: center;
+            display: inline-block;
+            font-size: 16px;
+            margin-top: 20px;
+            text-decoration: none;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+        .cta-button:hover {
+            background-color: #333;
+        }
+    </style>
+<body>
+    <header>
+        <h1>hotel Bellavista</h1>
+    </header>
+    <div class="hero-image">
+        <div class="hero-text">
+            <h1>¡Bienvenido al hotel Bellavista!</h1>
+            <p>Disfruta de una estancia de lujo en nuestras habitaciones elegantes de 5 estrellas.</p>
+            <a href="{% url "habitaciones" %}" class="cta-button">Ver habitaciones</a>
+        </div>
+    </div>
+    <section>
+        <h2>Descubre el hotel Bellavista</h2>
+        <p>El hotel bellavista es un lujoso hotel de 5 estrellas situado en el corazón de la ciudad. Ofrecemos una amplia variedad de habitaciones elegantes y comodidades de primera clase para garantizar una estancia inolvidable para nuestros huéspedes.</p>
+        <p>Ya sea que estés aquí por negocios o por placer, nuestro amable personal está siempre disponible para asegurarse de que tu estancia sea perfecta en todos los sentidos.</p>
+    </section>
+    <footer>
+        <p>&copy; 2024 hotel Bellavista - Todos los derechos reservados</p>
+    </footer>
+</body>
+{% endblock %}
